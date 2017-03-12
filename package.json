@@ -1,0 +1,29 @@
+{
+  "name": "clip-it",
+  "version": "0.0.0",
+  "description": "A totally easy way for modern browsers to put something into clipboard.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dafrok/clip-it.git"
+  },
+  "keywords": [
+    "clipboard",
+    "copy"
+  ],
+  "author": "Dafrok <o.o@mug.dog>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dafrok/clip-it/issues"
+  },
+  "homepage": "https://github.com/Dafrok/clip-it#readme",
+  "devDependencies": {
+    "rollup": "^0.41.5",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-replace": "^1.1.1"
+  }
+}
