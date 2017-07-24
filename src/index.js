@@ -1,5 +1,3 @@
-const 
-
 export default (str, options = {}) => {
   const $input = document.createElement('input');
   document.body.appendChild($input)
@@ -12,7 +10,7 @@ export default (str, options = {}) => {
   $input.selectStart = 0
   $input.selectEnd = $input.value.length
   $input.select()
-  setTimeout(setTimeout => {
+  setTimeout(() => {
     document.execCommand('copy')
     document.body.removeChild($input)
   })

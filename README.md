@@ -13,14 +13,18 @@ $ npm i --save clip-it
 **ATTENTION:** The `clip-it` API must be triggered in the same callstack with a trusted event.
 
 HTML
+
 ```html
 <button>COPY</button>
 ```
 
 JavaScript
+
 ```javascript
 import clipIt from 'clip-it'
 
 const $btn = document.querySelector('button')
-$btn.addEventListner('click', e => clipIt('Hello world!'))
+$btn.addEventListner('click', e => clipIt('<span style="color: red;">Hello world!</span>', {
+  contentType: 'text/html'
+}))
 ```
