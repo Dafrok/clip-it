@@ -1,6 +1,6 @@
 const 
 
-export default (str, options) => {
+export default (str, options = {}) => {
   const $input = document.createElement('input');
   document.body.appendChild($input)
   $input.addEventListener(e => {
