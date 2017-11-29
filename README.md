@@ -15,7 +15,8 @@ $ npm i --save clip-it
 HTML
 
 ```html
-<button>COPY</button>
+<button>Copy as Text</button>
+<button>Copy as HTML</button>
 ```
 
 JavaScript
@@ -23,8 +24,13 @@ JavaScript
 ```javascript
 import clipIt from 'clip-it'
 
-const $btn = document.querySelector('button')
-$btn.addEventListner('click', e => clipIt('<span style="color: red;">Hello world!</span>', {
+const $btnCopyText = document.querySelector('button')
+const $btnCopyHTML = document.querySelector('button')
+
+$btnCopyText.addEventListner('click', e => clipIt('Hello World'))
+
+// Some browsers only supports plain text. (e.g. iOS Safari)
+$btnCopyHTML.addEventListner('click', e => clipIt('<span style="color: red;">Hello world!</span>', {
   contentType: 'text/html'
 }))
 ```
