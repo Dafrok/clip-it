@@ -10,7 +10,7 @@ export default (str, options = {}) => {
   document.body.appendChild($input)
   $input.addEventListener('copy', e => {
     e.preventDefault()
-    e.clipboardData.setData(options.contentType || 'text/plain', e.target.value)
+    e.clipboardData.setData(options.contentType || 'text/plain', str)
   })
   $input.value = str
   $input.selectStart = 0
