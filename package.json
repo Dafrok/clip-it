@@ -1,6 +1,6 @@
 {
   "name": "clip-it",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A totally easy way for modern browsers to put something into clipboard.",
   "main": "index.js",
   "scripts": {
