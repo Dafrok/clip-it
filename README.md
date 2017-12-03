@@ -6,7 +6,7 @@ A totally easy way for modern browsers to put something into clipboard.
 
 > [Demo by Codepen](https://codepen.io/Dafrok/full/jaQZME/)
 
-## Install
+## Installation
 
 ```bash
 $ npm i --save clip-it
@@ -33,7 +33,7 @@ const $btnCopyHTML = document.querySelector('button')
 
 $btnCopyText.onclick = e => clipIt('Hello World'))
 
-// Some browsers only supports plain text. (e.g. iOS Safari)
+// Some browsers only supports to copy plain text. (e.g. iOS Safari)
 $btnCopyHTML.onclick = e => clipIt('<span style="color: red;">Hello world!</span>', {
   contentType: 'text/html'
 }))
