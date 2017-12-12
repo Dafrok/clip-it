@@ -2,9 +2,10 @@
   "name": "clip-it",
   "version": "0.2.0",
   "description": "A totally easy way for modern browsers to put something into clipboard.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "rollup -c"
+    "test": "karma start ./test/karma.conf.js",
+    "build": "rollup -c ./build/rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,19 @@
   },
   "homepage": "https://github.com/Dafrok/clip-it#readme",
   "devDependencies": {
+    "babel-loader": "^7.1.2",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-es2015": "^6.24.1",
+    "codecov": "^3.0.0",
+    "istanbul-instrumenter-loader": "^3.0.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.1",
+    "karma-webpack": "^2.0.6",
     "rollup": "^0.41.5",
-    "rollup-plugin-babel": "^2.7.1"
+    "rollup-plugin-babel": "^2.7.1",
+    "webpack": "^3.10.0"
   }
 }

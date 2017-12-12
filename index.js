@@ -6,7 +6,6 @@
 
   var index = (function (value) {
     var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
     return copyByInput(value, options) || copyByContentEditable(value, options);
   });
 
@@ -52,7 +51,7 @@
 
     $el.value = value;
     $el.selectStart = 0;
-    $el.selectEnd = $input.value.length;
+    $el.selectEnd = $el.value.length;
     $el.select();
 
     return excuteCopy($el, value, options);
