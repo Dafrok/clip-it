@@ -4,6 +4,7 @@
   "description": "A totally easy way for modern browsers to put something into clipboard.",
   "main": "dist/index.js",
   "scripts": {
+    "codecov": "codecov",
     "test": "karma start ./test/karma.conf.js",
     "build": "rollup -c ./build/rollup.config.js"
   },
