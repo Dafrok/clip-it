@@ -2,6 +2,7 @@
 
 A totally easy way for modern browsers to put something into clipboard.
 
+[![build](https://travis-ci.org/Dafrok/clip-it.svg?branch=master)]()
 [![npm](https://img.shields.io/npm/v/clip-it.svg)](https://www.npmjs.com/package/clip-it)
 [![codecov](https://codecov.io/gh/Dafrok/clip-it/branch/master/graph/badge.svg)](https://codecov.io/gh/Dafrok/clip-it)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
