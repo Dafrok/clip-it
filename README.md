@@ -45,6 +45,8 @@ $btnCopyHTML.onclick = e => clipIt('<span style="color: red;">Hello world!</span
 }))
 ```
 
+<div style="display: none;">
 <script>
 console.log('Just clip it.');
 </script>
+</div>
