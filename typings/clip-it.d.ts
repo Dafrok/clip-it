@@ -2,6 +2,6 @@ interface IClipItOption {
     contentType?: string
 }
 
-declare module 'clipIt' {
+declare module 'clip-it' {
     export function clipIt(string, IClipItOption?): boolean;
 }
