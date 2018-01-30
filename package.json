@@ -16,6 +16,7 @@
     "clipboard",
     "copy"
   ],
+  "types": "typings/clip-it.d.ts",
   "author": "Dafrok <o.o@mug.dog>",
   "license": "MIT",
   "bugs": {
