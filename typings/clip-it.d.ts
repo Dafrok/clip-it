@@ -3,5 +3,5 @@ interface IClipItOption {
 }
 
 declare module 'clip-it' {
-    export function clipIt(text: string, options?: IClipItOption): boolean;
+    export default function (text: string, options?: IClipItOption): boolean;
 }
