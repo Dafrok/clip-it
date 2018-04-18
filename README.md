@@ -20,8 +20,6 @@ $ npm i --save clip-it
 
 ## Usage
 
-**ATTENTION:** The `clip-it` API must be triggered in the same callstack with a trusted event.
-
 ### HTML
 
 ```html
@@ -39,8 +37,12 @@ const $btnCopyHTML = document.querySelector('button')
 
 $btnCopyText.onclick = e => clipIt('Hello World'))
 
-// Some browsers only supports to copy plain text. (e.g. iOS Safari)
 $btnCopyHTML.onclick = e => clipIt('<span style="color: red;">Hello world!</span>', {
   contentType: 'text/html'
 }))
 ```
+
+## ATTENTION
+
+- The `clip-it` API must be triggered in the same callstack with a trusted event.
+- Some browsers only supports to copy plain text. (e.g. iOS Safari)
